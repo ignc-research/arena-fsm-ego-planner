@@ -1,1 +1,1 @@
-# -arena-fsm-ego-planner
+# arena-fsm-ego-planner
