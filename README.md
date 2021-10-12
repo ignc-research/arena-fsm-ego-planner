@@ -11,11 +11,6 @@ Arena-FSM-EGO-Planner is developed on top of the navigation framework [arena-ros
 | *performance an a map with static obstacles* | *performance on an empty map* |
 
 
-
-### Documentation & References
-* How to use flatland: http://flatland-simulator.readthedocs.io
-* ros navigation stack: http://wiki.ros.org/navigation
-
 ## 1. Installation
 Please refer to [Installation.md](docs/Installation.md) for detailed explanations about the installation process.
 
@@ -23,16 +18,5 @@ Please refer to [Installation.md](docs/Installation.md) for detailed explanation
 
 ### Test the FSM-EGO-Planner
 
-Please refer to [DRL-Training.md](docs/DRL-Training.md) for detailed explanations about agent, policy and training setups.
+Please refer to [FSM-EGO-Planner](docs/time_space_planner.md) for detailed explanations about the waypoint generators.
 
-### 2.1 Test the simulation environment and task generator
-
-* In one terminal, start simulation.
-```
-roslaunch arena_bringup start_arena_flatland.launch map_file:="map1"  disable_scenario:="false" scenario_file:="eval/obstacle_map1_obs20.json"
-```
-Now click on the `2D Nav Goal` Button and click on the goal towards which the triangulation points. The agent will automatically navigate to the goal.
-
-Alternatively you we provide other maps and scenarios for you to test:
-- `map_empty` with the scenarios `empty_map_obs05.json` `empty_map_obs10.json` `empty_map_obs20.json`
-- `map1` with the scenarios `obstacle_map1_obs05.json` `obstacle_map1_obs10.json` `obstacle_map1_obs20.json`
