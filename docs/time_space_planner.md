@@ -1,8 +1,6 @@
 ## Preparations
+* Install arena-rosnav according to the Installation docs
 ```
-git checkout local_planner_subgoalmode
-git pull
-
 cd $HOME/catkin_ws
 catkin_make -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
@@ -13,7 +11,7 @@ catkin_make -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3
 workon rosnav
 roslaunch arena_bringup start_arena_flatland.launch
 ```
-#### 2) Start time_space plan manager(fsm:Finite state machine) in another terminal
+#### 2) Start the FSM-EGO planner (time_space-planner-fsm:Finite state machine) in another terminal
 ```
 workon rosnav
 roslaunch arena_bringup timed_space_planner_fsm.launch
@@ -34,7 +32,7 @@ workon rosnav
 roslaunch arena_bringup timed_space_planner_fsm.launch
 ```
 
-## Setting parameter for plan manager(fsm:Finite state machine) 
+## Setting parameter for FSM-EGO planner(fsm:Finite state machine) 
 Open the parameter yaml file with the following code in VSC:
 ```
 code -r $HOME/catkin_ws/src/arena-fsm-ego-planner/arena_bringup/launch/plan_fsm_param.yaml
